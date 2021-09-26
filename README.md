@@ -1,4 +1,4 @@
-# DelaunayVoronoi2D
+# Swift Delaunay triangulation + Voronoi Diagram
 
 A Swift implementation of the [Bowyer–Watson algorithm](https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm).
 The result is a [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) for a set of randomly generated points.
@@ -10,4 +10,4 @@ A example of the Delaunay triangulation and the Voronoi diagram for 1000 points.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
