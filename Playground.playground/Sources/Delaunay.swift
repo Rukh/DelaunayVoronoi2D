@@ -15,7 +15,6 @@ public extension PointerHashable {
     
 }
 
-
 // Work faster then Float on 64-bit systems
 public typealias Point = SIMD2<Double>
 
@@ -207,21 +206,14 @@ public struct Delaunay {
                 result.insert(newTriangle)
             }
         }
-        // done inserting points, now clean up
         
+        // done inserting points, now clean up
         superPoligon
             .flatMap { $0.parents }
             .forEach {
                 // $0.relise()
                 result.remove($0) // remove triangles, but not relise locus points
             }
-        
-//        [superTriangle.a, superTriangle.b, superTriangle.c]
-//            .flatMap { $0.parents }
-//            .forEach {
-////                $0.relise()
-//                result.remove($0)
-//            }
         return result
     }
     
